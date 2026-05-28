@@ -1,0 +1,6 @@
+{
+  "name": "BTS AI Chat Simulator",
+  "description": "一个粉色系防弹少年团(BTS)手机聊天与社交模拟器，内置KakaoTalk AI聊天、Instagram动态浏览以及自定义设置。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

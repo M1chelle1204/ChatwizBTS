@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #1c1917; /* stone-900 ambient dark color */
+    color: #292524; /* stone-800 */
+    font-family: 'Noto Sans KR', 'Inter', -apple-system, sans-serif;
+  }
+}
+
+/* Custom animated background layouts for phone wallpaper themes */
+.pink-soft-gradient {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 50%, #fecdd3 100%);
+}
+
+.cosmic-dark-gradient {
+  background: linear-gradient(135deg, #180828 0%, #1e1b4b 50%, #03001e 100%);
+}
+
+/* Scrollbar styles inside apps (thin/cute styled) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 99px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 99px;
+}
+
+/* Phone notch, status bar styles */
+.phone-notch {
+  width: 130px;
+  height: 24px;
+  background-color: #000000;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+/* Custom keyframes for heart drop animation */
+@keyframes heartDrop {
+  0% { transform: translateY(-50px) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(150px) scale(1.5); opacity: 0; }
+}
+
+.animate-heart-drop {
+  animation: heartDrop 1s ease-out forwards;
+}
